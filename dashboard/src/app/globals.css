@@ -1,0 +1,261 @@
+:root {
+  /* Base palette — a blue-leaning charcoal rather than near-black, and a
+     cool off-white rather than a bright one, so nothing on the page sits at
+     full contrast against its neighbour. */
+  --bg: #14161b;
+  --bg-deep: #101216;
+  --fg: #dde2ea;
+  --fg-strong: #f0f3f8;
+  --card: #1b1f26;
+  --card-raised: #21262f;
+  --border: #2b313b;
+  --border-soft: #232932;
+  --muted: #8d95a3;
+  --muted-dim: #6b7280;
+
+  /* Royal blue accent ramp. --accent stays the mid tone every existing
+     component already references; the ramp gives depth for gradients. */
+  --accent: #4169e1;
+  --accent-bright: #6b8bf0;
+  --accent-deep: #2f4fb5;
+  --accent-dim: rgba(65, 105, 225, 0.16);
+  --accent-glow: rgba(65, 105, 225, 0.28);
+
+  /* Gradients. Surfaces are lit from the top-left, matching a single implied
+     light source, so stacked cards read as layered rather than flat. */
+  --grad-page: radial-gradient(1200px 620px at 12% -8%, #1d2330 0%, transparent 62%),
+    radial-gradient(1000px 560px at 92% 4%, #1a2237 0%, transparent 58%), var(--bg);
+  --grad-card: linear-gradient(158deg, #212630 0%, #1a1e25 58%, #181c23 100%);
+  --grad-card-raised: linear-gradient(158deg, #262c38 0%, #1e232b 100%);
+  --grad-accent: linear-gradient(135deg, var(--accent-bright) 0%, var(--accent) 52%, var(--accent-deep) 100%);
+  --grad-accent-soft: linear-gradient(135deg, rgba(107, 139, 240, 0.22) 0%, rgba(47, 79, 181, 0.14) 100%);
+  --grad-hairline: linear-gradient(90deg, transparent, rgba(148, 168, 224, 0.34), transparent);
+
+  /* Semantic tokens used by metric/summary cards. */
+  --color-background-secondary: #232830;
+  --border-radius-md: 10px;
+  --color-text-success: #7fdcb4;
+  --color-text-danger: #f18a8a;
+  --color-text-secondary: var(--muted);
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 24px -14px rgba(0, 0, 0, 0.75);
+  --shadow-raised: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 14px 34px -18px rgba(0, 0, 0, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--grad-page);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Shared surface treatment. Components opt in by class so inline-styled
+   panels can migrate gradually without a flag day. */
+.sb-card {
+  background: var(--grad-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+}
+
+.sb-card-raised {
+  background: var(--grad-card-raised);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-raised);
+}
+
+/* A one-pixel gradient rule — used to separate sections without a hard line. */
+.sb-hairline {
+  height: 1px;
+  background: var(--grad-hairline);
+  border: 0;
+}
+
+::selection {
+  background: var(--accent-glow);
+  color: var(--fg-strong);
+}
+
+/* Range inputs pick up the accent without per-component styling. */
+input[type="range"] {
+  accent-color: var(--accent);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+/* --- Project cards: editable fields ---------------------------------------
+   The summary and phase inputs sit flush in the card so it still reads as a
+   summary, not a form. The border only appears on hover/focus, which is what
+   signals they are editable at all. */
+.sb-field:hover {
+  border-color: var(--border) !important;
+}
+.sb-field:focus {
+  border-color: var(--accent) !important;
+  background: rgba(0, 0, 0, 0.18) !important;
+}
+.sb-field::placeholder {
+  color: var(--muted-dim);
+}
+
+.sb-title-link:hover {
+  color: var(--accent-bright) !important;
+  text-decoration-color: var(--accent-bright) !important;
+}
+
+/* --- Rendered project notes ------------------------------------------------
+   react-markdown emits plain tags, so the body is styled here rather than with
+   a component map. Sized a little tighter than prose defaults to sit inside a
+   dashboard card. */
+.sb-markdown {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--fg);
+}
+.sb-markdown > *:first-child {
+  margin-top: 0;
+}
+.sb-markdown h1,
+.sb-markdown h2,
+.sb-markdown h3 {
+  color: var(--fg-strong);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 1.6em 0 0.6em;
+}
+.sb-markdown h1 { font-size: 20px; }
+.sb-markdown h2 {
+  font-size: 16px;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+.sb-markdown h3 { font-size: 14.5px; }
+.sb-markdown p,
+.sb-markdown ul,
+.sb-markdown ol {
+  margin: 0 0 0.9em;
+}
+.sb-markdown ul,
+.sb-markdown ol {
+  padding-left: 1.4em;
+}
+.sb-markdown li {
+  margin-bottom: 0.25em;
+}
+.sb-markdown li::marker {
+  color: var(--muted);
+}
+/* GFM task lists — the roadmap checkboxes in the project notes. */
+.sb-markdown li:has(> input[type="checkbox"]) {
+  list-style: none;
+  margin-left: -1.2em;
+}
+.sb-markdown input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+.sb-markdown a {
+  color: var(--accent-bright);
+  text-underline-offset: 2px;
+}
+.sb-markdown strong {
+  color: var(--fg-strong);
+  font-weight: 600;
+}
+.sb-markdown code {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 0.12em 0.35em;
+  font-size: 0.88em;
+}
+.sb-markdown pre {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin: 0 0 1em;
+}
+.sb-markdown pre code {
+  background: none;
+  padding: 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+.sb-markdown blockquote {
+  margin: 0 0 1em;
+  padding-left: 1em;
+  border-left: 3px solid var(--accent-deep);
+  color: var(--muted);
+}
+.sb-markdown table {
+  border-collapse: collapse;
+  margin: 0 0 1.1em;
+  font-size: 13px;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.sb-markdown th,
+.sb-markdown td {
+  border: 1px solid var(--border);
+  padding: 0.42em 0.75em;
+  text-align: left;
+}
+.sb-markdown th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--fg-strong);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.sb-markdown hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 1.5em 0;
+}
+/* Display math can overflow on narrow screens; scroll it, not the page. */
+.sb-markdown .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35em 0;
+}

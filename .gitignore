@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.local
+.dev.vars
+
+# Dependencies
+node_modules/
+
+# Obsidian config
+.obsidian/
+
+# Next.js
+dashboard/.next/
+dashboard/out/
+*.tsbuildinfo
+
+# Cloudflare
+.wrangler/
+worker/.wrangler/
+dashboard/.wrangler/
+
+# Logs
+*.log
+
+# Runtime caches
+api/insights-cache.json
+api/briefing-cache.json
+
+# Your own data. The repo ships a small sample vault and sample rollups so the
+# dashboard renders on a fresh clone; once it is yours, keep it out of git
+# unless you are certain you want it published.
+# obsidian-vault/Daily-Progress/
+# obsidian-vault/Health/
+# data/ring/
+
+.DS_Store

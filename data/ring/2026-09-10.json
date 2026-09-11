@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-10",
+  "timezone": "Europe/Berlin",
+  "sleep": {
+    "totalMin": 453,
+    "awakeMin": 18,
+    "lightMin": 262,
+    "deepMinEstimate": 99,
+    "remMin": 74,
+    "start": "2026-09-09T23:49:00+02:00",
+    "end": "2026-09-10T07:19:00+02:00",
+    "attributedTo": "wakeDate",
+    "userEdited": false
+  },
+  "restingHR": {
+    "bpm": 55,
+    "method": "overnight-median-lowmotion",
+    "n": 248,
+    "rolling7d": 55,
+    "rolling30d": 56
+  },
+  "activity": {
+    "steps": 10501,
+    "distanceKm": 5.07,
+    "stepGoal": 10000,
+    "source": "ring"
+  },
+  "training": {
+    "zoneMinutes": {
+      "2": 44,
+      "3": 12,
+      "4": 0,
+      "5": 0
+    },
+    "zone2Minutes": 44,
+    "zoneModel": "tanaka-estimate-v1",
+    "hrMaxEstimate": 189,
+    "workouts": []
+  },
+  "device": {
+    "battery": 95,
+    "lastSync": "2026-09-10T22:20:00+02:00",
+    "batteryHistory": {
+      "latest": 61,
+      "charging": false,
+      "samples": [
+        {
+          "at": "2026-09-10T08:12:00+02:00",
+          "percent": 91,
+          "charging": false
+        }
+      ],
+      "drainPctPerHour": 1.39
+    }
+  },
+  "quality": {
+    "hrCoverage": 0.8,
+    "flags": []
+  }
+}

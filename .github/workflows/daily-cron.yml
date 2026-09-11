@@ -1,0 +1,46 @@
+name: Daily cron
+
+on:
+  schedule:
+    # GitHub's schedule event is best-effort and queues worst at the top of the
+    # hour — delays of several hours are normal. Pick a time well before you
+    # want the file, and an odd minute rather than :00.
+    #
+    # Floor: daily-cron.js takes the date from the runner clock, which is UTC.
+    # Scheduling before your zone's UTC midnight writes tomorrow's file tonight,
+    # so the earliest safe UTC hour is your offset from UTC (7 for UTC-7).
+    - cron: "37 9 * * *"
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install script dependencies
+        run: npm ci
+        working-directory: scripts
+
+      - name: Configure git
+        run: |
+          git config user.name "second-brain-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Run daily cron (create daily/weekly files + briefing, commit)
+        env:
+          VAULT_PATH: ${{ github.workspace }}/obsidian-vault
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Set these to yours. TIMEZONE must match the Worker's and the API's,
+          # or "today" means different days in different components.
+          TIMEZONE: UTC
+          LATITUDE: "0"
+          LONGITUDE: "0"
+        run: node scripts/daily-cron.js

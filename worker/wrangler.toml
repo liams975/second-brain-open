@@ -1,0 +1,16 @@
+name = "second-brain-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-27"
+compatibility_flags = ["nodejs_compat"]
+
+# Non-secret config. Secrets are set separately with `wrangler secret put`:
+#   GITHUB_TOKEN        (fine-grained token, Contents: read/write on the repo)
+#   ANTHROPIC_API_KEY   (for the /api/insights endpoint)
+#   API_KEY             (required — requests must send a matching x-api-key header)
+[vars]
+GITHUB_OWNER = "your-github-username"
+GITHUB_REPO = "your-vault-repo"
+GITHUB_BRANCH = "main"
+VAULT_DIR = "obsidian-vault"
+# IANA zone your daily files are named in, e.g. "Europe/Berlin".
+TIMEZONE = "UTC"
