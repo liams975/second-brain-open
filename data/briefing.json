@@ -1,161 +1,161 @@
 {
-  "date": "2026-09-28",
-  "generated_at": "17:47",
+  "date": "2026-09-29",
+  "generated_at": "16:05",
   "weather": {
-    "temperature": 25.6,
-    "feels_like": 26.1,
-    "high": 25.7,
-    "low": 24.9,
-    "conditions": "Mainly clear",
+    "temperature": 25.5,
+    "feels_like": 27.6,
+    "high": 25.8,
+    "low": 25,
+    "conditions": "Clear sky",
     "precipitation_mm": 0,
     "humidity": 72,
-    "wind_kph": 23.2,
+    "wind_kph": 11.9,
     "forecast_hourly": [
       {
-        "time": "2026-09-28T18:00",
+        "time": "2026-09-29T17:00",
         "temperature": 25.6,
+        "conditions": "Partly cloudy",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-29T18:00",
+        "temperature": 25.4,
+        "conditions": "Overcast",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-29T19:00",
+        "temperature": 25.1,
+        "conditions": "Partly cloudy",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-29T20:00",
+        "temperature": 25.2,
         "conditions": "Mainly clear",
         "precip_chance": 0
       },
       {
-        "time": "2026-09-28T19:00",
-        "temperature": 25.5,
-        "conditions": "Clear sky",
+        "time": "2026-09-29T21:00",
+        "temperature": 25.1,
+        "conditions": "Mainly clear",
         "precip_chance": 0
       },
       {
-        "time": "2026-09-28T20:00",
-        "temperature": 25.4,
-        "conditions": "Clear sky",
+        "time": "2026-09-29T22:00",
+        "temperature": 25,
+        "conditions": "Mainly clear",
         "precip_chance": 0
       },
       {
-        "time": "2026-09-28T21:00",
-        "temperature": 25.4,
-        "conditions": "Partly cloudy",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-28T22:00",
-        "temperature": 25.4,
-        "conditions": "Clear sky",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-28T23:00",
-        "temperature": 25.4,
-        "conditions": "Clear sky",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-29T00:00",
-        "temperature": 25.5,
-        "conditions": "Clear sky",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-29T01:00",
-        "temperature": 25.5,
-        "conditions": "Clear sky",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-29T02:00",
-        "temperature": 25.6,
-        "conditions": "Clear sky",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-09-29T03:00",
-        "temperature": 25.3,
+        "time": "2026-09-29T23:00",
+        "temperature": 25,
         "conditions": "Overcast",
         "precip_chance": 0
       },
       {
-        "time": "2026-09-29T04:00",
+        "time": "2026-09-30T00:00",
         "temperature": 24.8,
+        "conditions": "Mainly clear",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-30T01:00",
+        "temperature": 24.6,
+        "conditions": "Mainly clear",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-30T02:00",
+        "temperature": 24.6,
         "conditions": "Overcast",
         "precip_chance": 0
       },
       {
-        "time": "2026-09-29T05:00",
-        "temperature": 24.8,
-        "conditions": "Partly cloudy",
+        "time": "2026-09-30T03:00",
+        "temperature": 24.6,
+        "conditions": "Overcast",
+        "precip_chance": 0
+      },
+      {
+        "time": "2026-09-30T04:00",
+        "temperature": 24.7,
+        "conditions": "Overcast",
         "precip_chance": 0
       }
     ],
     "forecast_daily": [
       {
-        "date": "2026-09-28",
-        "high": 25.7,
-        "low": 24.9,
-        "conditions": "Overcast",
-        "precipitation_mm": 0
-      },
-      {
         "date": "2026-09-29",
-        "high": 25.6,
-        "low": 24.7,
+        "high": 25.8,
+        "low": 25,
         "conditions": "Overcast",
         "precipitation_mm": 0
       },
       {
         "date": "2026-09-30",
-        "high": 25.2,
-        "low": 24.2,
+        "high": 25.3,
+        "low": 24.6,
         "conditions": "Overcast",
         "precipitation_mm": 0
       },
       {
         "date": "2026-10-01",
-        "high": 25.2,
-        "low": 23.8,
-        "conditions": "Drizzle",
-        "precipitation_mm": 0.2
+        "high": 24.8,
+        "low": 24.1,
+        "conditions": "Overcast",
+        "precipitation_mm": 0
       },
       {
         "date": "2026-10-02",
-        "high": 25,
-        "low": 23.9,
-        "conditions": "Partly cloudy",
+        "high": 25.1,
+        "low": 24.5,
+        "conditions": "Overcast",
         "precipitation_mm": 0
       },
       {
         "date": "2026-10-03",
-        "high": 25.9,
+        "high": 25.7,
         "low": 25,
         "conditions": "Overcast",
         "precipitation_mm": 0
       },
       {
         "date": "2026-10-04",
-        "high": 26.2,
-        "low": 25.2,
+        "high": 25.9,
+        "low": 24.8,
+        "conditions": "Overcast",
+        "precipitation_mm": 0
+      },
+      {
+        "date": "2026-10-05",
+        "high": 25.8,
+        "low": 25.1,
         "conditions": "Overcast",
         "precipitation_mm": 0
       }
     ]
   },
   "market": {
-    "session_date": "2026-09-25",
+    "session_date": "2026-09-28",
     "indices": [
       {
         "name": "S&P 500",
-        "value": 7743.41,
-        "change_pct": 0.51,
-        "direction": "up"
+        "value": 7683.69,
+        "change_pct": -0.77,
+        "direction": "down"
       },
       {
         "name": "Nasdaq",
-        "value": 27068.72,
-        "change_pct": 0.48,
-        "direction": "up"
+        "value": 26820.38,
+        "change_pct": -0.92,
+        "direction": "down"
       },
       {
         "name": "Dow Jones",
-        "value": 51828.62,
-        "change_pct": 0.93,
-        "direction": "up"
+        "value": 51481.51,
+        "change_pct": -0.67,
+        "direction": "down"
       }
     ],
     "notable": ""
