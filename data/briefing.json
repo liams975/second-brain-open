@@ -1,161 +1,161 @@
 {
-  "date": "2026-10-15",
-  "generated_at": "14:21",
+  "date": "2026-10-16",
+  "generated_at": "14:09",
   "weather": {
-    "temperature": 26.1,
-    "feels_like": 29.1,
-    "high": 26.2,
-    "low": 25.6,
-    "conditions": "Mainly clear",
-    "precipitation_mm": 0.1,
-    "humidity": 82,
-    "wind_kph": 21.5,
+    "temperature": 26.4,
+    "feels_like": 30.1,
+    "high": 26.4,
+    "low": 25.5,
+    "conditions": "Overcast",
+    "precipitation_mm": 1,
+    "humidity": 81,
+    "wind_kph": 11.6,
     "forecast_hourly": [
       {
-        "time": "2026-10-15T15:00",
+        "time": "2026-10-16T15:00",
+        "temperature": 26.4,
+        "conditions": "Overcast",
+        "precip_chance": 8
+      },
+      {
+        "time": "2026-10-16T16:00",
+        "temperature": 26.4,
+        "conditions": "Overcast",
+        "precip_chance": 13
+      },
+      {
+        "time": "2026-10-16T17:00",
+        "temperature": 26.4,
+        "conditions": "Overcast",
+        "precip_chance": 19
+      },
+      {
+        "time": "2026-10-16T18:00",
+        "temperature": 26.4,
+        "conditions": "Overcast",
+        "precip_chance": 24
+      },
+      {
+        "time": "2026-10-16T19:00",
+        "temperature": 26.3,
+        "conditions": "Partly cloudy",
+        "precip_chance": 27
+      },
+      {
+        "time": "2026-10-16T20:00",
+        "temperature": 26.4,
+        "conditions": "Overcast",
+        "precip_chance": 28
+      },
+      {
+        "time": "2026-10-16T21:00",
+        "temperature": 26.3,
+        "conditions": "Drizzle",
+        "precip_chance": 33
+      },
+      {
+        "time": "2026-10-16T22:00",
+        "temperature": 26.3,
+        "conditions": "Drizzle",
+        "precip_chance": 45
+      },
+      {
+        "time": "2026-10-16T23:00",
         "temperature": 26.1,
-        "conditions": "Mainly clear",
-        "precip_chance": 6
+        "conditions": "Drizzle",
+        "precip_chance": 60
       },
       {
-        "time": "2026-10-15T16:00",
+        "time": "2026-10-17T00:00",
         "temperature": 26,
-        "conditions": "Mainly clear",
-        "precip_chance": 4
+        "conditions": "Drizzle",
+        "precip_chance": 67
       },
       {
-        "time": "2026-10-15T17:00",
+        "time": "2026-10-17T01:00",
         "temperature": 25.9,
-        "conditions": "Mainly clear",
-        "precip_chance": 1
+        "conditions": "Partly cloudy",
+        "precip_chance": 58
       },
       {
-        "time": "2026-10-15T18:00",
+        "time": "2026-10-17T02:00",
         "temperature": 26,
-        "conditions": "Mainly clear",
-        "precip_chance": 0
-      },
-      {
-        "time": "2026-10-15T19:00",
-        "temperature": 26,
-        "conditions": "Mainly clear",
-        "precip_chance": 1
-      },
-      {
-        "time": "2026-10-15T20:00",
-        "temperature": 26,
-        "conditions": "Mainly clear",
-        "precip_chance": 4
-      },
-      {
-        "time": "2026-10-15T21:00",
-        "temperature": 26.2,
-        "conditions": "Clear sky",
-        "precip_chance": 6
-      },
-      {
-        "time": "2026-10-15T22:00",
-        "temperature": 26.2,
-        "conditions": "Overcast",
-        "precip_chance": 6
-      },
-      {
-        "time": "2026-10-15T23:00",
-        "temperature": 26.1,
-        "conditions": "Overcast",
-        "precip_chance": 5
-      },
-      {
-        "time": "2026-10-16T00:00",
-        "temperature": 26,
-        "conditions": "Overcast",
-        "precip_chance": 4
-      },
-      {
-        "time": "2026-10-16T01:00",
-        "temperature": 25.9,
-        "conditions": "Overcast",
-        "precip_chance": 4
-      },
-      {
-        "time": "2026-10-16T02:00",
-        "temperature": 25.9,
-        "conditions": "Overcast",
-        "precip_chance": 3
+        "conditions": "Drizzle",
+        "precip_chance": 42
       }
     ],
     "forecast_daily": [
       {
-        "date": "2026-10-15",
-        "high": 26.2,
-        "low": 25.6,
-        "conditions": "Drizzle",
-        "precipitation_mm": 0.1
-      },
-      {
         "date": "2026-10-16",
-        "high": 26.7,
-        "low": 25.7,
+        "high": 26.4,
+        "low": 25.5,
         "conditions": "Drizzle",
-        "precipitation_mm": 1.2
+        "precipitation_mm": 1
       },
       {
         "date": "2026-10-17",
         "high": 26.5,
-        "low": 25.1,
+        "low": 25.9,
         "conditions": "Drizzle",
-        "precipitation_mm": 2.2
+        "precipitation_mm": 1.1
       },
       {
         "date": "2026-10-18",
         "high": 26.5,
-        "low": 26,
+        "low": 25.9,
         "conditions": "Drizzle",
-        "precipitation_mm": 0.4
+        "precipitation_mm": 0.2
       },
       {
         "date": "2026-10-19",
-        "high": 26.7,
-        "low": 25.6,
+        "high": 26.4,
+        "low": 26,
         "conditions": "Drizzle",
-        "precipitation_mm": 1.2
+        "precipitation_mm": 0.5
       },
       {
         "date": "2026-10-20",
-        "high": 26.8,
-        "low": 25.9,
+        "high": 26.9,
+        "low": 26,
         "conditions": "Drizzle",
-        "precipitation_mm": 1.8
+        "precipitation_mm": 2.8
       },
       {
         "date": "2026-10-21",
-        "high": 26.8,
-        "low": 25.1,
+        "high": 26.7,
+        "low": 26.1,
         "conditions": "Drizzle",
-        "precipitation_mm": 10.8
+        "precipitation_mm": 2.2
+      },
+      {
+        "date": "2026-10-22",
+        "high": 26.7,
+        "low": 25.9,
+        "conditions": "Drizzle",
+        "precipitation_mm": 1
       }
     ]
   },
   "market": {
-    "session_date": "2026-10-14",
+    "session_date": "2026-10-15",
     "indices": [
       {
         "name": "S&P 500",
-        "value": 7718.94,
-        "change_pct": -1.11,
-        "direction": "down"
+        "value": 7744.06,
+        "change_pct": 0.33,
+        "direction": "up"
       },
       {
         "name": "Nasdaq",
-        "value": 26692.87,
-        "change_pct": -1.88,
-        "direction": "down"
+        "value": 26713.03,
+        "change_pct": 0.08,
+        "direction": "up"
       },
       {
         "name": "Dow Jones",
-        "value": 51621.48,
-        "change_pct": -0.09,
-        "direction": "down"
+        "value": 52177.69,
+        "change_pct": 1.08,
+        "direction": "up"
       }
     ],
     "notable": ""
