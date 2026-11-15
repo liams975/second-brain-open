@@ -1,138 +1,138 @@
 {
-  "date": "2026-11-14",
-  "generated_at": "15:59",
+  "date": "2026-11-15",
+  "generated_at": "16:31",
   "weather": {
-    "temperature": 27.2,
+    "temperature": 27.5,
     "feels_like": 30.7,
-    "high": 27.5,
-    "low": 26.6,
-    "conditions": "Overcast",
-    "precipitation_mm": 0.2,
-    "humidity": 77,
-    "wind_kph": 12.5,
+    "high": 27.9,
+    "low": 26.9,
+    "conditions": "Clear sky",
+    "precipitation_mm": 0.6,
+    "humidity": 79,
+    "wind_kph": 17.7,
     "forecast_hourly": [
       {
-        "time": "2026-11-14T16:00",
-        "temperature": 27.2,
-        "conditions": "Overcast",
-        "precip_chance": 27
+        "time": "2026-11-15T17:00",
+        "temperature": 27.5,
+        "conditions": "Drizzle",
+        "precip_chance": 40
       },
       {
-        "time": "2026-11-14T17:00",
-        "temperature": 27.2,
-        "conditions": "Overcast",
-        "precip_chance": 26
+        "time": "2026-11-15T18:00",
+        "temperature": 27.6,
+        "conditions": "Clear sky",
+        "precip_chance": 43
       },
       {
-        "time": "2026-11-14T18:00",
-        "temperature": 27.3,
-        "conditions": "Overcast",
+        "time": "2026-11-15T19:00",
+        "temperature": 27.7,
+        "conditions": "Clear sky",
+        "precip_chance": 38
+      },
+      {
+        "time": "2026-11-15T20:00",
+        "temperature": 27.8,
+        "conditions": "Clear sky",
+        "precip_chance": 29
+      },
+      {
+        "time": "2026-11-15T21:00",
+        "temperature": 27.9,
+        "conditions": "Clear sky",
         "precip_chance": 24
       },
       {
-        "time": "2026-11-14T19:00",
-        "temperature": 27.3,
-        "conditions": "Overcast",
-        "precip_chance": 21
-      },
-      {
-        "time": "2026-11-14T20:00",
-        "temperature": 27.4,
-        "conditions": "Overcast",
-        "precip_chance": 17
-      },
-      {
-        "time": "2026-11-14T21:00",
-        "temperature": 27.5,
-        "conditions": "Overcast",
-        "precip_chance": 14
-      },
-      {
-        "time": "2026-11-14T22:00",
-        "temperature": 27.5,
-        "conditions": "Partly cloudy",
-        "precip_chance": 11
-      },
-      {
-        "time": "2026-11-14T23:00",
-        "temperature": 27.4,
+        "time": "2026-11-15T22:00",
+        "temperature": 27.9,
         "conditions": "Mainly clear",
-        "precip_chance": 8
+        "precip_chance": 29
       },
       {
-        "time": "2026-11-15T00:00",
-        "temperature": 27.2,
-        "conditions": "Clear sky",
-        "precip_chance": 6
+        "time": "2026-11-15T23:00",
+        "temperature": 27.9,
+        "conditions": "Drizzle",
+        "precip_chance": 38
       },
       {
-        "time": "2026-11-15T01:00",
-        "temperature": 26.9,
-        "conditions": "Clear sky",
-        "precip_chance": 5
+        "time": "2026-11-16T00:00",
+        "temperature": 27.7,
+        "conditions": "Drizzle",
+        "precip_chance": 45
       },
       {
-        "time": "2026-11-15T02:00",
-        "temperature": 26.7,
-        "conditions": "Mainly clear",
-        "precip_chance": 4
+        "time": "2026-11-16T01:00",
+        "temperature": 27.1,
+        "conditions": "Drizzle",
+        "precip_chance": 46
       },
       {
-        "time": "2026-11-15T03:00",
+        "time": "2026-11-16T02:00",
         "temperature": 26.8,
-        "conditions": "Mainly clear",
-        "precip_chance": 4
+        "conditions": "Drizzle",
+        "precip_chance": 45
+      },
+      {
+        "time": "2026-11-16T03:00",
+        "temperature": 27.3,
+        "conditions": "Drizzle",
+        "precip_chance": 47
+      },
+      {
+        "time": "2026-11-16T04:00",
+        "temperature": 26.8,
+        "conditions": "Drizzle",
+        "precip_chance": 56
       }
     ],
     "forecast_daily": [
       {
-        "date": "2026-11-14",
-        "high": 27.5,
-        "low": 26.6,
-        "conditions": "Drizzle",
-        "precipitation_mm": 0.2
-      },
-      {
         "date": "2026-11-15",
-        "high": 27.8,
-        "low": 26.7,
+        "high": 27.9,
+        "low": 26.9,
         "conditions": "Drizzle",
-        "precipitation_mm": 1.1
+        "precipitation_mm": 0.6
       },
       {
         "date": "2026-11-16",
-        "high": 27.6,
-        "low": 25.9,
-        "conditions": "Drizzle",
-        "precipitation_mm": 7.1
+        "high": 27.8,
+        "low": 25.6,
+        "conditions": "Rain showers",
+        "precipitation_mm": 7.5
       },
       {
         "date": "2026-11-17",
-        "high": 27.5,
-        "low": 25.6,
+        "high": 27.7,
+        "low": 25.9,
         "conditions": "Rain showers",
-        "precipitation_mm": 9.2
+        "precipitation_mm": 6.6
       },
       {
         "date": "2026-11-18",
-        "high": 27.7,
-        "low": 26.7,
+        "high": 27.5,
+        "low": 25.9,
         "conditions": "Drizzle",
-        "precipitation_mm": 0.3
+        "precipitation_mm": 3.3
       },
       {
         "date": "2026-11-19",
         "high": 27.7,
-        "low": 26.3,
+        "low": 26.6,
         "conditions": "Drizzle",
-        "precipitation_mm": 0.9
+        "precipitation_mm": 0.3
       },
       {
         "date": "2026-11-20",
+        "high": 27.9,
+        "low": 26.7,
+        "conditions": "Drizzle",
+        "precipitation_mm": 2.9
+      },
+      {
+        "date": "2026-11-21",
         "high": 27.8,
-        "low": 26.6,
-        "conditions": "Clear sky",
-        "precipitation_mm": 0
+        "low": 26.8,
+        "conditions": "Drizzle",
+        "precipitation_mm": 1.8
       }
     ]
   },
